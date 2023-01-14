@@ -6,5 +6,19 @@ $vendorDir = dirname(__DIR__);
 $baseDir = dirname($vendorDir);
 
 return array(
+    'Slim\\' => array($vendorDir . '/slim/slim/Slim'),
+    'Selective\\BasePath\\' => array($vendorDir . '/selective/basepath/src'),
+    'Sapphirecat\\Slim4HttpInteropAdapter\\' => array($vendorDir . '/sapphirecat/slim4-http-interop-adapter/src'),
+    'Psr\\Log\\' => array($vendorDir . '/psr/log/src'),
+    'Psr\\Http\\Server\\' => array($vendorDir . '/psr/http-server-handler/src', $vendorDir . '/psr/http-server-middleware/src'),
+    'Psr\\Http\\Message\\' => array($vendorDir . '/psr/http-factory/src', $vendorDir . '/psr/http-message/src'),
+    'Psr\\Container\\' => array($vendorDir . '/psr/container/src'),
+    'Nyholm\\Psr7\\' => array($vendorDir . '/nyholm/psr7/src'),
+    'Nyholm\\Psr7Server\\' => array($vendorDir . '/nyholm/psr7-server/src'),
+    'Laminas\\Diactoros\\' => array($vendorDir . '/laminas/laminas-diactoros/src'),
+    'Http\\Message\\' => array($vendorDir . '/php-http/message-factory/src'),
+    'Http\\Factory\\Guzzle\\' => array($vendorDir . '/http-interop/http-factory-guzzle/src'),
     'Hcode\\' => array($vendorDir . '/hcodebr/php-classes/src'),
+    'GuzzleHttp\\Psr7\\' => array($vendorDir . '/guzzlehttp/psr7/src'),
+    'FastRoute\\' => array($vendorDir . '/nikic/fast-route/src'),
 );

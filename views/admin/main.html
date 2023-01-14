@@ -56,6 +56,12 @@
                   <p>Inactive Page</p>
                 </a>
               </li>
+              <li class="nav-item">
+                <a href="/admin/logout" class="nav-link">
+                  <i class="far fa-user nav-icon"></i>
+                  <p>Logout</p>
+                </a>
+              </li>
             </ul>
           </li>
           <li class="nav-item">
