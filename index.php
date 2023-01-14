@@ -3,6 +3,7 @@
 require_once("vendor/autoload.php");
 
 use \Hcode\Page;
+use \Hcode\PageAdmin;
 use \Slim\Slim;
 
 $app = new Slim();
@@ -17,6 +18,17 @@ $app->get('/', function() {
 
 
 });
+
+$app->get('/admin', function() {
+    
+	$page = new PageAdmin();
+
+	$page->setTpl("main");
+	$page->setTpl("index");
+	$page->setTpl("control");
+
+});
+
 
 $app->run();
 
